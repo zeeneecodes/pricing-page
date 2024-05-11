@@ -1,0 +1,14 @@
+{
+  "name": "bonsai-unofficial",
+  "version": "1.0.0",
+  "description": "A copy of bonsai website for practice purposes",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
