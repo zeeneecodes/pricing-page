@@ -1,6 +1,6 @@
 .navigation {
   background-color: $main-color;
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 5rem 0 5rem;
 
   &__container {
     display: flex;
@@ -13,15 +13,12 @@
 
     &--center {
       display: flex;
+      height: 6rem;
     }
 
     &--right {
       display: flex;
-
-      &-1 {
-        display: flex;
-        margin-right: 10rem;
-      }
+      margin-bottom: 1.5rem;
     }
   }
 
@@ -46,10 +43,11 @@
       &-content {
         position: absolute;
         color: $dark-gray;
-        top: 6.5rem;
+        top: 6.2rem;
         left: -5rem;
         width: 30rem;
         box-shadow: $box-shadow;
+        visibility: hidden;
       }
     }
   }
@@ -57,6 +55,7 @@
 
 .logo {
   width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .dropdown__content {
@@ -126,4 +125,8 @@
   &:first-child:hover &-more {
     visibility: visible;
   }
+}
+
+.navigation__link--dropdown-1:hover .navigation__link--dropdown-content {
+  visibility: visible;
 }
