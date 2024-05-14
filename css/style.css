@@ -89,7 +89,8 @@ body {
     height: 43.3rem;
     background-color: white;
     display: grid;
-    grid-template-columns: 28rem 28rem; }
+    grid-template-columns: 28rem 28rem;
+    visibility: hidden; }
     .dropdown__content-more > div {
       display: grid;
       grid-template-columns: 2rem 1fr;
@@ -106,3 +107,5 @@ body {
         .dropdown__content-more > div > :nth-child(2) p {
           margin-top: 1rem;
           font-size: 1.2rem; }
+  .dropdown__content:first-child:hover .dropdown__content-more {
+    visibility: visible; }

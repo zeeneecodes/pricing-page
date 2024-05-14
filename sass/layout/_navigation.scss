@@ -37,9 +37,9 @@
       text-decoration: none;
       font-size: 1.7rem;
       letter-spacing: 1px;
-
     }
 
+    
     &--dropdown {
       position: relative;
 
@@ -92,6 +92,7 @@
     background-color: $white;
     display: grid;
     grid-template-columns: 28rem 28rem;
+    visibility: hidden;
 
     & > div {
       display: grid;
@@ -120,5 +121,9 @@
         }
       }
     }
+  }
+
+  &:first-child:hover &-more {
+    visibility: visible;
   }
 }
