@@ -1,0 +1,75 @@
+.navigation {
+  background-color: $main-color;
+  padding: 1.5rem 5rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--left {
+      width: 15rem;
+    }
+
+    &--center {
+      display: flex;
+    }
+
+    &--right {
+      display: flex;
+
+      &-1 {
+        display: flex;
+        margin-right: 10rem;
+      }
+    }
+  }
+
+  &__link {
+    padding: 1.5rem;
+    cursor: pointer;
+    
+    &,
+    &:link,
+    &:visited,
+    &--dropdown {
+      color: $white;
+      text-decoration: none;
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+
+    }
+
+    &--dropdown {
+      position: relative;
+
+      &-content {
+        position: absolute;
+        color: $dark-gray;
+        top: 6.5rem;
+        background-color: lightpink;
+        left: -5rem;
+        width: 30rem;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 100%;
+}
+
+.dropdown__content {
+  padding: 2.5rem 4rem;
+
+  & h2 {
+    font-family: $title-font;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  & p {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+}
