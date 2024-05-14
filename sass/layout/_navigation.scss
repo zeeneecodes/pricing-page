@@ -47,9 +47,9 @@
         position: absolute;
         color: $dark-gray;
         top: 6.5rem;
-        background-color: lightpink;
         left: -5rem;
         width: 30rem;
+        box-shadow: $box-shadow;
       }
     }
   }
@@ -61,6 +61,15 @@
 
 .dropdown__content {
   padding: 2.5rem 4rem;
+  position: relative;
+  
+  &:last-child {
+    padding-bottom: 4rem;
+  }
+
+  &:hover {
+    background-color: $light-gray;
+  }
 
   & h2 {
     font-family: $title-font;
@@ -71,5 +80,45 @@
   & p {
     font-size: 1.4rem;
     letter-spacing: 1px;
+  }
+
+  &-more {
+    color: $dark-gray;
+    position: absolute;
+    top: 0;
+    left: 30rem;
+    width: 65rem;
+    height: 43.3rem;
+    background-color: $white;
+    display: grid;
+    grid-template-columns: 28rem 28rem;
+
+    & > div {
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      padding: 1.5rem 2rem;
+
+      &:hover {
+        background-color: $light-gray;
+      }
+
+      & img {
+        width: 100%;
+      }
+
+      & > :nth-child(2) {
+        margin-left: 1rem;
+        
+        & h3 {
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+  
+        & p {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 }
