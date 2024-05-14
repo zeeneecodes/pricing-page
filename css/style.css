@@ -25,9 +25,7 @@ body {
   .btn:not(:last-child) {
     margin-right: 1.2rem; }
   .btn:hover {
-    background-color: white;
-    color: #4c4d5f;
-    border: 1px solid #4c4d5f; }
+    background-color: #ce727c; }
 
 .navigation {
   background-color: #de7f89;
@@ -60,8 +58,9 @@ body {
         top: 6.2rem;
         left: -5rem;
         width: 30rem;
-        box-shadow: 1.6rem 2.8rem 7.7rem 2px rgba(0, 0, 0, 0.11);
-        visibility: hidden; }
+        box-shadow: 1.6rem 2.8rem 7.7rem 2px rgba(0, 0, 0, 0.11); }
+        .navigation__link--dropdown-content-1 {
+          visibility: hidden; }
 
 .logo {
   width: 100%;
@@ -81,6 +80,12 @@ body {
   .dropdown__content p {
     font-size: 1.4rem;
     letter-spacing: 1px; }
+  .dropdown__content-2 > div {
+    display: flex;
+    margin-bottom: 2rem; }
+    .dropdown__content-2 > div img {
+      width: 2rem;
+      margin-right: 1rem; }
   .dropdown__content-more {
     color: #4c4d5f;
     position: absolute;
@@ -111,5 +116,5 @@ body {
   .dropdown__content:first-child:hover .dropdown__content-more {
     visibility: visible; }
 
-.navigation__link--dropdown-1:hover .navigation__link--dropdown-content {
+.navigation__link--dropdown-1:hover .navigation__link--dropdown-content-1 {
   visibility: visible; }

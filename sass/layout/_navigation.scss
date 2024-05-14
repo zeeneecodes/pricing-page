@@ -47,7 +47,10 @@
         left: -5rem;
         width: 30rem;
         box-shadow: $box-shadow;
-        visibility: hidden;
+
+        &-1{
+          visibility: hidden;
+        }
       }
     }
   }
@@ -79,6 +82,18 @@
   & p {
     font-size: 1.4rem;
     letter-spacing: 1px;
+  }
+
+  &-2 {
+    & > div {
+      display: flex;
+      margin-bottom: 2rem;
+
+      & img {
+        width: 2rem;
+        margin-right: 1rem;
+      }
+    }
   }
 
   &-more {
@@ -127,6 +142,6 @@
   }
 }
 
-.navigation__link--dropdown-1:hover .navigation__link--dropdown-content {
+.navigation__link--dropdown-1:hover .navigation__link--dropdown-content-1 {
   visibility: visible;
 }
