@@ -59,15 +59,20 @@ body {
         position: absolute;
         color: #4c4d5f;
         top: 6.5rem;
-        background-color: lightpink;
         left: -5rem;
-        width: 30rem; }
+        width: 30rem;
+        box-shadow: 1.6rem 2.8rem 7.7rem 2px rgba(0, 0, 0, 0.11); }
 
 .logo {
   width: 100%; }
 
 .dropdown__content {
-  padding: 2.5rem 4rem; }
+  padding: 2.5rem 4rem;
+  position: relative; }
+  .dropdown__content:last-child {
+    padding-bottom: 4rem; }
+  .dropdown__content:hover {
+    background-color: #f0f0f0; }
   .dropdown__content h2 {
     font-family: Tinos;
     font-weight: 400;
@@ -75,3 +80,29 @@ body {
   .dropdown__content p {
     font-size: 1.4rem;
     letter-spacing: 1px; }
+  .dropdown__content-more {
+    color: #4c4d5f;
+    position: absolute;
+    top: 0;
+    left: 30rem;
+    width: 65rem;
+    height: 43.3rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 28rem 28rem; }
+    .dropdown__content-more > div {
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      padding: 1.5rem 2rem; }
+      .dropdown__content-more > div:hover {
+        background-color: #f0f0f0; }
+      .dropdown__content-more > div img {
+        width: 100%; }
+      .dropdown__content-more > div > :nth-child(2) {
+        margin-left: 1rem; }
+        .dropdown__content-more > div > :nth-child(2) h3 {
+          font-size: 1.5rem;
+          font-weight: 400; }
+        .dropdown__content-more > div > :nth-child(2) p {
+          margin-top: 1rem;
+          font-size: 1.2rem; }
