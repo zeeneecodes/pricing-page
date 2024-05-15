@@ -48,7 +48,8 @@
         width: 30rem;
         box-shadow: $box-shadow;
 
-        &-1{
+        &-1,
+        &-2{
           visibility: hidden;
         }
       }
@@ -62,5 +63,9 @@
 }
 
 .navigation__link--dropdown-1:hover .navigation__link--dropdown-content-1 {
+  visibility: visible;
+}
+
+.navigation__link--dropdown-2:hover .navigation__link--dropdown-content-2 {
   visibility: visible;
 }

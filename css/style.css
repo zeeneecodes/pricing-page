@@ -155,7 +155,7 @@ body {
         left: -5rem;
         width: 30rem;
         box-shadow: 1.6rem 2.8rem 7.7rem 2px rgba(0, 0, 0, 0.11); }
-        .navigation__link--dropdown-content-1 {
+        .navigation__link--dropdown-content-1, .navigation__link--dropdown-content-2 {
           visibility: hidden; }
 
 .logo {
@@ -163,4 +163,7 @@ body {
   margin-bottom: 1.5rem; }
 
 .navigation__link--dropdown-1:hover .navigation__link--dropdown-content-1 {
+  visibility: visible; }
+
+.navigation__link--dropdown-2:hover .navigation__link--dropdown-content-2 {
   visibility: visible; }
