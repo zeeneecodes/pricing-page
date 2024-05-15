@@ -1,0 +1,17 @@
+.pricing {
+  background-color: $white;
+  padding: 6rem 30rem;
+
+  & > h2 {
+    font-family: $title-font;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__cards {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+}
