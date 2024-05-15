@@ -13,23 +13,93 @@ body {
   font-family: Arial, Helvetica, sans-serif; }
 
 .btn {
-  background-color: transparent;
-  color: #efe5b0;
   font-size: 1.2rem;
   text-transform: uppercase;
-  padding: 1rem 2rem;
   border-radius: 3px;
   font-weight: 600;
-  cursor: pointer;
-  border: 1px solid #efe5b0; }
-  .btn:not(:last-child) {
-    margin-right: 1.2rem; }
-  .btn:hover {
-    background-color: #ce727c; }
+  cursor: pointer; }
+  .btn__nav {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: #efe5b0;
+    border: 1px solid #efe5b0; }
+    .btn__nav:not(:last-child) {
+      margin-right: 1.2rem; }
+    .btn__nav:hover {
+      background-color: #ce727c; }
+  .btn__general {
+    background-color: #de7f89;
+    color: #efe5b0;
+    border: 1px solid #efe5b0;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 2rem 0; }
+    .btn__general:not(:last-child) {
+      margin-right: 1.2rem; }
+    .btn__general:hover {
+      background-color: #922630; }
+
+.card {
+  background-color: #FBEFF0;
+  color: #4c4d5f;
+  width: 35rem;
+  height: 70rem;
+  border-radius: 5px;
+  padding: 3rem 4rem;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+  transition: all .3s ease-out; }
+  .card:hover {
+    transform: scale(1.1) translateY(-1rem);
+    background-color: #fff; }
+  .card__type {
+    margin-top: 3rem;
+    margin-bottom: 2rem; }
+    .card__type h3 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: #de7f89; }
+    .card__type p {
+      font-size: 1.4rem;
+      line-height: 2rem; }
+  .card__price {
+    position: relative;
+    border-bottom: 2px solid #de7f89;
+    padding-bottom: 1rem; }
+    .card__price--currency,
+    .card__price p:last-child {
+      font-weight: 400; }
+    .card__price--currency {
+      font-size: 3rem;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .card__price--amount {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 5rem;
+      color: #de7f89;
+      margin-left: 3rem; }
+    .card__price p:last-child {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      display: inline-block;
+      letter-spacing: 1px; }
+  .card__details {
+    margin-top: 2rem;
+    height: 35rem; }
+    .card__details div {
+      display: flex;
+      margin-bottom: 1rem;
+      align-items: center;
+      font-size: 1.3rem; }
+      .card__details div svg {
+        margin-right: 1rem; }
 
 .dropdown__content {
   padding: 2.5rem 4rem;
-  position: relative; }
+  position: relative;
+  background-color: white; }
   .dropdown__content:last-child {
     padding-bottom: 4rem; }
   .dropdown__content:hover {
@@ -167,3 +237,16 @@ body {
 
 .navigation__link--dropdown-2:hover .navigation__link--dropdown-content-2 {
   visibility: visible; }
+
+.pricing {
+  background-color: white;
+  padding: 6rem 18rem; }
+  .pricing > h2 {
+    font-family: Tinos;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center; }
+  .pricing__cards {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around; }
