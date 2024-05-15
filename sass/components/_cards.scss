@@ -1,0 +1,81 @@
+.card {
+  background-color: $main-color-lighter;
+  color: $dark-gray;
+  width: 35rem;
+  height: 70rem;
+  border-radius: 5px;
+  padding: 3rem 4rem;
+  box-shadow: $box-shadow-subtle;
+  transition: all .3s ease-out;
+
+  &:hover {
+    transform: scale(1.1) translateY(-1rem);
+    background-color: #fff;
+  }
+
+  &__type {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    & h3 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: $main-color;
+    }
+    
+    & p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  }
+  
+  &__price {
+    position: relative;
+    border-bottom: 2px solid $main-color;
+    padding-bottom: 1rem;
+    
+    &--currency,
+    & p:last-child {
+      font-weight: 400;
+    }
+    
+    &--currency {
+      font-size: 3rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    &--amount {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 5rem;
+      color: $main-color;
+      margin-left: 3rem;
+    }
+    
+    & p:last-child {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      display: inline-block;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__details {
+    margin-top: 2rem;
+    height: 35rem;
+    
+    & div {
+      display: flex;
+      margin-bottom: 1rem;
+      align-items: center;
+      font-size: 1.3rem;
+
+      & svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
