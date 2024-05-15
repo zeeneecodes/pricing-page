@@ -1,19 +1,40 @@
 .btn {
-  background-color: transparent;
-  color: $sub-color;
   font-size: 1.2rem;
   text-transform: uppercase;
-  padding: 1rem 2rem;
   border-radius: 3px;
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid $sub-color;
   
-  &:not(:last-child) {
-    margin-right: 1.2rem;
+  
+  &__nav {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: $sub-color;
+    border: 1px solid $sub-color;
+
+    &:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+    
+    &:hover {
+      background-color: #ce727c;
+    }
   }
-  
-  &:hover {
-    background-color: #ce727c;
+    
+  &__general {
+    background-color: $main-color;
+    color: $sub-color;
+    border: 1px solid $sub-color;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 2rem 0;
+
+    &:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+    
+    &:hover {
+      background-color: $main-color-darker;
+    }
   }
 }
