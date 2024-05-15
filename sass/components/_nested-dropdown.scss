@@ -10,6 +10,11 @@
     background-color: $light-gray;
   }
 
+  & h2 {
+    font-family: $title-font;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
   
   & p {
     font-size: 1.4rem;
@@ -17,14 +22,10 @@
   }
   
   &-1 {
-    & h2 {
-      font-family: $title-font;
-      font-weight: 400;
-      margin-bottom: 1rem;
-    }
   }
 
   &-2 {
+    position: relative;
     padding: 2rem 4rem;
 
     &:last-child {
@@ -47,43 +48,107 @@
     position: absolute;
     top: 0;
     left: 30rem;
-    width: 65rem;
-    height: 43.3rem;
     background-color: $white;
-    display: grid;
-    grid-template-columns: 28rem 28rem;
     visibility: hidden;
-
-    & > div {
+    
+    &-1 {
+      width: 65rem;
+      height: 43.3rem;
       display: grid;
-      grid-template-columns: 2rem 1fr;
-      padding: 1.5rem 2rem;
+      grid-template-columns: 28rem 28rem;
 
-      &:hover {
-        background-color: $light-gray;
-      }
-
-      & img {
-        width: 100%;
-      }
-
-      & > :nth-child(2) {
-        margin-left: 1rem;
-        
-        & h3 {
-          font-size: 1.5rem;
-          font-weight: 400;
+      & > div {
+        display: grid;
+        grid-template-columns: 2rem 1fr;
+        padding: 1.5rem 2rem;
+  
+        &:hover {
+          background-color: $light-gray;
         }
   
-        & p {
-          margin-top: 1rem;
-          font-size: 1.2rem;
+        & img {
+          width: 100%;
+        }
+  
+        & > :nth-child(2) {
+          margin-left: 1rem;
+          
+          & h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+          }
+    
+          & p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    
+    &-2 {
+      padding: 1rem 2rem;
+      height: 42rem;
+      width: 44rem;
+
+      &--proposal {
+        top: -6rem;
+      }
+
+      &--invoice {
+        top: -12rem;
+      }
+
+      &--agreement {
+        top: -18rem;
+      }
+      
+      &--quote {
+        top: -24rem;
+      }
+      
+      &--scope {
+        top: -30rem;
+      }
+
+      &--brief {
+        top: -36rem;
+      }
+
+
+      & h2 {
+        font-family: $title-font;
+        margin-bottom: 2rem;
+      }
+      
+      & a:link,
+      & a:visited {
+        text-decoration: none;
+        color: $dark-gray;
+        font-size: 1.5rem;
+        display: block;
+        width: 40rem;
+        padding: 2rem 0;
+        border: 1px solid $dark-gray;
+        text-align: center;
+        border-radius: 3px;
+        transition: all .3s;
+        letter-spacing: -.2px;
+
+        &:hover {
+          transform: scale(1.03);
+          background-color: $main-color;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
         }
       }
     }
   }
 
-  &:first-child:hover &-more {
+  &:hover &-more {
     visibility: visible;
+    color: $dark-gray;
   }
 }
