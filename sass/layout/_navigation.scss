@@ -1,6 +1,11 @@
 .navigation {
   background-color: $main-color;
   padding: 1.5rem 5rem 0 5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  z-index: 100;
 
   &__container {
     display: flex;
