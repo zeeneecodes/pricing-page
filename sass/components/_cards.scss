@@ -13,6 +13,10 @@
     background-color: #fff;
   }
 
+  &:not(:last-child) {
+    margin-right: 5rem;
+  }
+
   &__type {
     margin-top: 3rem;
     margin-bottom: 2rem;
