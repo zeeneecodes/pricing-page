@@ -1,0 +1,38 @@
+.slider {
+  &__input {
+    visibility: hidden;
+  }
+  
+  &__label {
+    position: relative;
+    width: 6rem;
+    height: 3rem;
+    padding: 1rem;
+  }
+  &__toggle {
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    right: -3rem;
+    bottom: 0;
+    background-color: $main-color;
+    cursor: pointer;
+    border-radius: 3rem;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: .5rem;
+      left: .5rem;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 1rem;
+      background-color: $white;
+      transition: all .5s;
+    }
+  }
+
+  &__input:checked + &__label &__toggle::after {
+    transform: translateX(3rem);
+  }
+}
