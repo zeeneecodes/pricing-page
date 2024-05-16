@@ -1,0 +1,46 @@
+.pricing {
+  &__header {
+    & > h2 {
+      margin-right: 5rem;
+    }
+
+    & p {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      &:first-of-type {
+        color: $main-color;
+
+      }
+
+      &:last-child {
+        margin-left: 4rem;
+      }
+    }
+  }
+}
+
+.heading {
+  &--primary {
+    font-family: $title-font;
+    font-size: 4rem;
+    font-weight: 400;
+
+    &-sub {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+
+  }
+  
+  &--details {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+.amount {
+  font-weight: 600;
+  font-size: 5rem;
+}

@@ -6,12 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    & > h2 {
-      font-family: $title-font;
-      font-size: 4rem;
-      font-weight: 400;
-    }
   }
   
   &__cards {
