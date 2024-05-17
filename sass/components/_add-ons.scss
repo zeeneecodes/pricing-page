@@ -1,0 +1,47 @@
+.add-ons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-color-lighter;
+  width: 100%;
+  padding: 9rem 0;
+  transform: skewY(352deg);
+
+  &__title {
+    transform: skewY(7deg);
+    margin-bottom: 5rem;
+  }
+
+  &__details {
+    text-transform: uppercase;
+  }
+
+  &__card {
+    padding: 4rem 5rem;
+    background-color: $white;
+    width: 80rem;
+    transform: skewY(7deg);
+    box-shadow: $box-shadow-subtle;
+    border-radius: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+      
+    }
+    
+    &--container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    &--title {
+      color: $main-color;
+    }
+    
+    &--price {
+      width: 20rem;
+      text-align: center;
+    }
+
+  }
+}

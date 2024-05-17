@@ -40,6 +40,37 @@ body {
   font-weight: 600;
   font-size: 5rem; }
 
+.add-ons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FBEFF0;
+  width: 100%;
+  padding: 9rem 0;
+  transform: skewY(352deg); }
+  .add-ons__title {
+    transform: skewY(7deg);
+    margin-bottom: 5rem; }
+  .add-ons__details {
+    text-transform: uppercase; }
+  .add-ons__card {
+    padding: 4rem 5rem;
+    background-color: white;
+    width: 80rem;
+    transform: skewY(7deg);
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem; }
+    .add-ons__card:not(:last-child) {
+      margin-bottom: 2rem; }
+    .add-ons__card--container {
+      display: flex;
+      justify-content: space-between; }
+    .add-ons__card--title {
+      color: #de7f89; }
+    .add-ons__card--price {
+      width: 20rem;
+      text-align: center; }
+
 .btn {
   font-size: 1.2rem;
   text-transform: uppercase;
