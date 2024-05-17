@@ -90,7 +90,6 @@ body {
     background-color: #de7f89;
     color: #efe5b0;
     border: 1px solid #efe5b0;
-    width: 100%;
     margin-top: 1.5rem;
     padding: 2rem 0; }
     .btn__general:not(:last-child) {
@@ -152,6 +151,8 @@ body {
       font-size: 1.3rem; }
       .card__details div svg {
         margin-right: 1rem; }
+  .card button {
+    width: 100%; }
 
 .dropdown__content {
   padding: 2.5rem 4rem;
@@ -280,6 +281,74 @@ body {
       transition: all .5s; }
   .slider__input:checked + .slider__label .slider__toggle::after {
     transform: translateX(3rem); }
+
+.faq {
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .faq__quote {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    width: 90rem;
+    padding: 7rem 9rem; }
+    .faq__quote--text {
+      width: 90rem;
+      margin-right: 2rem; }
+      .faq__quote--text span {
+        color: #de7f89; }
+  .faq__button {
+    width: 20rem;
+    height: 5rem; }
+  .faq__accordion {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .faq__accordion--heading {
+      color: #de7f89; }
+    .faq__accordion--tab {
+      width: 100rem;
+      border-radius: 5px; }
+      .faq__accordion--tab:first-of-type {
+        margin-top: 5rem; }
+      .faq__accordion--tab:not(.faq__accordion--tab:first-of-type) {
+        margin-top: 1rem; }
+      .faq__accordion--tab input {
+        display: none; }
+      .faq__accordion--tab-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        height: 4rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        transition: color .3s, border-bottom 1s;
+        border-bottom: 1px solid #000; }
+        .faq__accordion--tab-label::after {
+          content: '+';
+          font-weight: 600; }
+        .faq__accordion--tab-label:hover {
+          color: #de7f89; }
+      .faq__accordion--tab-content {
+        color: #4c4d5f;
+        max-height: 0;
+        overflow: hidden;
+        font-size: 1.5rem;
+        transition: all .3s;
+        line-height: 2.5rem;
+        padding-left: 3rem; }
+      .faq__accordion--tab input:checked ~ .faq__accordion--tab-content {
+        max-height: 50rem;
+        visibility: visible; }
+      .faq__accordion--tab input:checked ~ .faq__accordion--tab-label {
+        border-bottom: 2px solid transparent;
+        color: #de7f89; }
+        .faq__accordion--tab input:checked ~ .faq__accordion--tab-label::after {
+          content: '-'; }
 
 .navigation {
   background-color: #de7f89;
