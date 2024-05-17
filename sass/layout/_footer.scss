@@ -1,0 +1,48 @@
+.footer {
+  margin-top: 10rem;
+  width: 100%;
+  background-color: $main-color-lighter;
+  height: 50rem;
+  padding: 5rem 7rem;
+
+  &__section {
+    &--top {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &--inner {
+    }
+  }
+
+  &__subject {
+    &--title {
+      color: $main-color;
+      font-size: 2rem;
+    }
+    &--content {
+      display: flex;
+      flex-direction: column;
+
+      & a:link,
+      & a:visited {
+        text-decoration: none;
+        color: $dark-gray;
+        font-size: 1.5rem;
+        transition: color .3s;
+
+        &:not(:last-child) {
+          margin-bottom: .5rem;
+        }
+
+        &:last-child {
+          margin-bottom: 5rem;
+        }
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
