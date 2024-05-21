@@ -2,13 +2,26 @@
   margin-top: 10rem;
   width: 100%;
   background-color: $main-color-lighter;
-  height: 65rem;
   padding: 5rem 7rem;
 
   &__section {
     &--top {
       display: flex;
       justify-content: space-around;
+    }
+
+    &--inner {
+      &-left {
+        @include respond(phone) {
+          margin-right: 5rem;
+        }
+      }
+
+      &-middle {
+        @include respond(phone) {
+          margin-right: 5rem;
+        }
+      }
     }
 
     &--bottom {

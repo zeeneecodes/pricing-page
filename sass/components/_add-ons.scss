@@ -24,6 +24,14 @@
     box-shadow: $box-shadow-subtle;
     border-radius: 1rem;
 
+    @include respond(tab-port-smaller) {
+      width: 60rem;
+    }
+
+    @include respond (phone) {
+      width: 80%;
+    }
+
     &:not(:last-child) {
       margin-bottom: 2rem;
       
@@ -32,6 +40,11 @@
     &--container {
       display: flex;
       justify-content: space-between;
+
+      @include respond(tab-port-smaller) {
+        flex-direction: column-reverse;
+        align-items: start;
+      }
     }
     
     &--title {
@@ -40,7 +53,11 @@
     
     &--price {
       width: 20rem;
-      text-align: center;
+      text-align: left;
+
+      @include respond(phone) {
+        margin-bottom: 1rem;
+      }
     }
 
   }

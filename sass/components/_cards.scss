@@ -8,6 +8,10 @@
   border: 2px solid $main-color;
   transition: all .3s ease-out;
 
+  @include respond (tab-port) {
+    width: 80%;
+  }
+
   &:hover {
     transform: scale(1.1) translateY(-1rem);
     background-color: $main-color-lighter;
@@ -16,7 +20,13 @@
 
   &:not(:last-child) {
     margin-right: 5rem;
+    
+    @include respond(tab-port) {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
   }
+
 
   &__type {
     margin-top: 3rem;

@@ -27,6 +27,10 @@
     font-size: 4rem;
     font-weight: 400;
 
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+
     &-sub {
       font-size: 2.5rem;
       text-transform: uppercase;

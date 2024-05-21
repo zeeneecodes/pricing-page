@@ -7,6 +7,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -32,6 +41,9 @@ body {
   font-family: Tinos;
   font-size: 4rem;
   font-weight: 400; }
+  @media (max-width: 28.125em) {
+    .heading--primary {
+      font-size: 3rem; } }
   .heading--primary-sub {
     font-size: 2.5rem;
     text-transform: uppercase; }
@@ -64,16 +76,29 @@ body {
     transform: skewY(8deg);
     box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1);
     border-radius: 1rem; }
+    @media (max-width: 37.5em) {
+      .add-ons__card {
+        width: 60rem; } }
+    @media (max-width: 28.125em) {
+      .add-ons__card {
+        width: 80%; } }
     .add-ons__card:not(:last-child) {
       margin-bottom: 2rem; }
     .add-ons__card--container {
       display: flex;
       justify-content: space-between; }
+      @media (max-width: 37.5em) {
+        .add-ons__card--container {
+          flex-direction: column-reverse;
+          align-items: start; } }
     .add-ons__card--title {
       color: #de7f89; }
     .add-ons__card--price {
       width: 20rem;
-      text-align: center; }
+      text-align: left; }
+      @media (max-width: 28.125em) {
+        .add-ons__card--price {
+          margin-bottom: 1rem; } }
 
 .btn {
   font-size: 1.2rem;
@@ -112,12 +137,19 @@ body {
   padding: 3rem 4rem;
   border: 2px solid #de7f89;
   transition: all .3s ease-out; }
+  @media (max-width: 56.25em) {
+    .card {
+      width: 80%; } }
   .card:hover {
     transform: scale(1.1) translateY(-1rem);
     background-color: #FBEFF0;
     box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1); }
   .card:not(:last-child) {
     margin-right: 5rem; }
+    @media (max-width: 56.25em) {
+      .card:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1.5rem; } }
   .card__type {
     margin-top: 3rem;
     margin-bottom: 2rem; }
@@ -301,9 +333,26 @@ body {
     background-color: #f0f0f0;
     width: 90rem;
     padding: 7rem 9rem; }
+    @media (max-width: 37.5em) {
+      .faq__quote {
+        width: 65rem; } }
+    @media (max-width: 28.125em) {
+      .faq__quote {
+        width: 40rem;
+        flex-direction: column;
+        align-items: center; } }
     .faq__quote--text {
       width: 90rem;
       margin-right: 2rem; }
+      @media (max-width: 28.125em) {
+        .faq__quote--text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 0; } }
+      @media (max-width: 28.125em) {
+        .faq__quote--text-heading {
+          font-size: 3rem; } }
       .faq__quote--text span {
         color: #de7f89; }
   .faq__button {
@@ -319,6 +368,12 @@ body {
     .faq__accordion--tab {
       width: 100rem;
       border-radius: 5px; }
+      @media (max-width: 37.5em) {
+        .faq__accordion--tab {
+          width: 60rem; } }
+      @media (max-width: 28.125em) {
+        .faq__accordion--tab {
+          width: 40rem; } }
       .faq__accordion--tab:first-of-type {
         margin-top: 5rem; }
       .faq__accordion--tab:not(.faq__accordion--tab:first-of-type) {
@@ -333,7 +388,7 @@ body {
         height: 4rem;
         cursor: pointer;
         font-size: 1.5rem;
-        transition: color .3s, border-bottom 1s;
+        transition: all .3s;
         border-bottom: 1px solid #000; }
         .faq__accordion--tab-label::after {
           content: '+';
@@ -361,11 +416,16 @@ body {
   margin-top: 10rem;
   width: 100%;
   background-color: #FBEFF0;
-  height: 65rem;
   padding: 5rem 7rem; }
   .footer__section--top {
     display: flex;
     justify-content: space-around; }
+  @media (max-width: 28.125em) {
+    .footer__section--inner-left {
+      margin-right: 5rem; } }
+  @media (max-width: 28.125em) {
+    .footer__section--inner-middle {
+      margin-right: 5rem; } }
   .footer__section--bottom {
     display: flex;
     align-items: center;
@@ -421,6 +481,9 @@ body {
     .navigation__container--center {
       display: flex;
       height: 6rem; }
+      @media (max-width: 28.125em) {
+        .navigation__container--center {
+          display: none; } }
     .navigation__container--right {
       display: flex;
       margin-bottom: 1.5rem; }
@@ -465,3 +528,7 @@ body {
     margin-top: 7rem;
     display: flex;
     justify-content: center; }
+    @media (max-width: 56.25em) {
+      .pricing__cards {
+        flex-direction: column;
+        align-items: center; } }

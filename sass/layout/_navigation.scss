@@ -19,6 +19,10 @@
     &--center {
       display: flex;
       height: 6rem;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
 
     &--right {
