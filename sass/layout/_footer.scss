@@ -2,7 +2,7 @@
   margin-top: 10rem;
   width: 100%;
   background-color: $main-color-lighter;
-  height: 50rem;
+  height: 65rem;
   padding: 5rem 7rem;
 
   &__section {
@@ -11,7 +11,28 @@
       justify-content: space-around;
     }
 
-    &--inner {
+    &--bottom {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 2rem;
+
+      &-links {
+        & a:visited,
+        & a:link {
+          text-decoration: none;
+        }
+      }
+
+      & p {
+        font-size: 1rem;
+        & a:link,
+        & a:visited {
+          text-decoration: none;
+          font-weight: 600;
+          color: $main-color;
+        }
+      }
     }
   }
 
@@ -19,6 +40,7 @@
     &--title {
       color: $main-color;
       font-size: 2rem;
+      margin-bottom: 1rem;
     }
     &--content {
       display: flex;
