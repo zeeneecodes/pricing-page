@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif; }
 
+::selection {
+  color: white;
+  background-color: #de7f89; }
+
 .pricing__header > h2 {
   margin-right: 5rem; }
 
@@ -81,34 +85,37 @@ body {
     padding: 1rem 2rem;
     background-color: transparent;
     color: #efe5b0;
-    border: 1px solid #efe5b0; }
+    border: 1px solid #efe5b0;
+    transition: all .3s; }
     .btn__nav:not(:last-child) {
       margin-right: 1.2rem; }
     .btn__nav:hover {
       background-color: #ce727c; }
   .btn__general {
     background-color: #de7f89;
+    border-style: none;
     color: #efe5b0;
-    border: 1px solid #efe5b0;
     margin-top: 1.5rem;
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    transition: all .3s; }
     .btn__general:not(:last-child) {
       margin-right: 1.2rem; }
     .btn__general:hover {
       background-color: #922630; }
 
 .card {
-  background-color: #FBEFF0;
+  background-color: white;
   color: #4c4d5f;
   width: 35rem;
   height: 70rem;
-  border-radius: 5px;
+  border-radius: 1rem;
   padding: 3rem 4rem;
-  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+  border: 2px solid #de7f89;
   transition: all .3s ease-out; }
   .card:hover {
     transform: scale(1.1) translateY(-1rem);
-    background-color: #fff; }
+    background-color: #FBEFF0;
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1); }
   .card:not(:last-child) {
     margin-right: 5rem; }
   .card__type {
@@ -189,7 +196,7 @@ body {
     visibility: hidden; }
     .dropdown__content-more-1 {
       width: 65rem;
-      height: 43.3rem;
+      height: 42.9rem;
       display: grid;
       grid-template-columns: 28rem 28rem; }
       .dropdown__content-more-1 > div {
