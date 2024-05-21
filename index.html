@@ -237,14 +237,14 @@
   <section class="pricing">
     <div class="pricing__header">
       <h2 class="heading--primary">Plans & Pricing</h2>
-      <p>monthly</p>
+      <p id="js-textMonthly">monthly</p>
       <div class="slider">
         <input type="checkbox" id="switch" class="slider__input">
         <label for="switch" class="slider__label">
           <span class="slider__toggle">&nbsp;</span>
         </label>
       </div>
-      <p>yearly</p>
+      <p id="js-textYearly">yearly</p>
     </div>
     <div class="pricing__cards">
       <div class="card">
@@ -254,7 +254,7 @@
         </div>
         <div class="card__price">
           <p class="card__price--currency">&#8369;</p>
-          <p class="card__price--amount amount">1,376</p>
+          <p class="card__price--amount amount" id="js-amountStarter">1,376</p>
           <p>&nbsp;/month</p>
         </div>
         <div class="card__details">
@@ -302,7 +302,7 @@
         </div>
         <div class="card__price">
           <p class="card__price--currency">&#8369;</p>
-          <p class="card__price--amount amount">2,184</p>
+          <p class="card__price--amount amount" id="js-amountProfessional">2,184</p>
           <p>&nbsp;/month</p>
         </div>
         <div class="card__details">
@@ -354,7 +354,7 @@
         </div>
         <div class="card__price">
           <p class="card__price--currency">&#8369;</p>
-          <p class="card__price--amount amount">4,424</p>
+          <p class="card__price--amount amount" id="js-amountBusiness">4,424</p>
           <p>&nbsp;/month</p>
         </div>
         <div class="card__details">
@@ -563,5 +563,7 @@
       <p>This site was created for purely practice purposes only. Overall UI/UX and page content was inspired by <a href="https://www.hellobonsai.com/">Hello Bonsai</a>'s <a href="https://web.archive.org/web/20221117021714/https://www.hellobonsai.com/pricing">old design</a>.</p>
     </div>
   </footer>
+
+  <script src="script/script.js"></script>
 </body>
 </html>
