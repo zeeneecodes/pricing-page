@@ -77,3 +77,20 @@ function changePrice(status) {
     priceBusiness.appendChild(priceBusinessNew);
   }
 }
+
+const hamburgerButton = document.querySelector('.hamburger__button');
+const hamburgerMenu = document.querySelector('.hamburger');
+
+hamburgerButton.addEventListener('change', (e) => {
+  if (e.target.checked) {
+    hamburgerMenu.style.visibility = 'visible';
+    hamburgerMenu.style.opacity = '1';
+    hamburgerMenu.style.transform = 'translateX(0)';
+    hamburgerMenu.style.transition = 'all .3s';
+  } else {
+    hamburgerMenu.style.visibility = 'hidden';
+    hamburgerMenu.style.opacity = '0';
+    hamburgerMenu.style.transform = 'translateX(50rem)';
+    hamburgerMenu.style.transition = 'all .3s';
+  }
+})
