@@ -3,9 +3,12 @@
   right: 0;
   bottom: 0;
   left: 0;
-  top: 0;
-  background-color: transparent;
+  top: 7.1rem;
   z-index: 50;
+  visibility: hidden;
+  // display: none;
+  transform: translateX(50rem);
+  opacity: 0;
 
   & input {
     display: none;
@@ -20,19 +23,23 @@
 
   &__menu {
     position: absolute;
-    top: 7.1rem;
+    top: 0rem;
     bottom: 0;
     left: 14rem;
     right: 0;
-    padding: 2rem 1rem;
+    padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
     background-color: $white;
     box-shadow: $box-shadow;
+    
 
     &--dropdown {
-      &-1 {
-        
+      &-1,
+      &-2 {
+        color: $dark-gray;
+        text-decoration: none;
+        font-size: 3rem;
       }
     }
     
@@ -45,7 +52,7 @@
         font-size: 3rem;
 
         &:not(:last-child) {
-          margin-bottom: 1rem;
+          margin-bottom: 4rem;
         }
       }
 
@@ -55,6 +62,9 @@
           overflow: hidden;
           max-height: 0;
           transition: all .3s;
+          margin-top: 2rem;
+          margin-left: 1rem;
+          margin-bottom: 2rem;
         }
       }
 
@@ -67,6 +77,10 @@
           color: $dark-gray;
           text-decoration: none;
           font-size: 2rem;
+        }
+
+        &:not(&:first-of-type) {
+          margin-top: 1rem;
         }
       }
 
@@ -102,7 +116,7 @@
 
   &__checkbox-1:checked + &__menu--dropdown-1 &__menu--link-content-1,
   &__checkbox-2:checked + &__menu--dropdown-2 &__menu--link-content-2 {
-    max-height: 20rem;
+    max-height: 30rem;
   }
   
   &__checkbox-1:checked + &__menu--dropdown-1 &__menu--link-1::after,
@@ -110,5 +124,3 @@
     content: '-';
   }
 }
-
-//button
