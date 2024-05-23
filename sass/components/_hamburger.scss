@@ -1,0 +1,114 @@
+.hamburger {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 50;
+
+  & input {
+    display: none;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+  }
+
+  &__menu {
+    position: absolute;
+    top: 7.1rem;
+    bottom: 0;
+    left: 14rem;
+    right: 0;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: $box-shadow;
+
+    &--dropdown {
+      &-1 {
+        
+      }
+    }
+    
+    &--link{
+      &,
+      &:link,
+      &:visited {
+        color: $dark-gray;
+        text-decoration: none;
+        font-size: 3rem;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &-content {
+        &-1,
+        &-2 {
+          overflow: hidden;
+          max-height: 0;
+          transition: all .3s;
+        }
+      }
+
+      &-sub {
+        display: flex;
+        flex-direction: column;
+
+        &:link,
+        &:visited {
+          color: $dark-gray;
+          text-decoration: none;
+          font-size: 2rem;
+        }
+      }
+
+      &-1 {
+        &::after {
+          content: '+';
+
+          @include respond(tab-port-smaller){
+            margin-left: 40rem;
+          }
+          
+          @include respond(phone) {
+            margin-left: 10rem;
+          }
+        }
+      }
+      
+      &-2 {
+        &::after {
+          content: '+';
+
+          @include respond(tab-port-smaller){
+            margin-left: 38.3rem;
+          }
+          
+          @include respond(phone) {
+            margin-left: 8.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__checkbox-1:checked + &__menu--dropdown-1 &__menu--link-content-1,
+  &__checkbox-2:checked + &__menu--dropdown-2 &__menu--link-content-2 {
+    max-height: 20rem;
+  }
+  
+  &__checkbox-1:checked + &__menu--dropdown-1 &__menu--link-1::after,
+  &__checkbox-2:checked + &__menu--dropdown-2 &__menu--link-2::after {
+    content: '-';
+  }
+}
+
+//button
